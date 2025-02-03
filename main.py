@@ -70,7 +70,7 @@ while playerinput:
     start.start()
     begin = input("> ").lower()
     if begin == "yes":
-        playerinput = False  # Corrected assignment
+        playerinput = False
         break
     elif begin == "no":
         print("You decide to leave...")
@@ -123,7 +123,7 @@ while True:
                 fight_result = inhabitant.fight(fight_with)
                 if fight_result:
                     player.inventory.remove(fight_with)
-                    current_room.remove_character()  # Remove Dave from the room
+                    current_room.remove_character()
                     print("Dave has been defeated. You can now move to the Ballroom")
                 else:
                     print("Game Over")
@@ -141,7 +141,7 @@ while True:
                 bribe_result = inhabitant.bribe(bribe_with)
                 if bribe_result:
                     player.inventory.remove(bribe_with)
-                    current_room.remove_character()  # Remove Dave from the room
+                    current_room.remove_character()
                     print("Dave has been removed. You can now move west!")
                 else:
                     print("Game Over")

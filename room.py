@@ -77,7 +77,7 @@ class Room:
                     print(
                         "Dave blocks your path. You must deal with him first by Fight or Bribe"
                     )
-                    return self  # Return the current room if Dave is still present
+                    return self
             return next_room if next_room else self
         else:
             print("You can't go that way")

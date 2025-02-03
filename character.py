@@ -64,11 +64,11 @@ class Enemy(Character):
         if combat_item == self.weakness:
             print(f"You have defeated {self.name} with the {combat_item}")
             print("---------------------------")
-            return True  # Return True if the fight is successful
+            return True
         else:
             print(f"{self.name} has defeated you")
             print("---------------------------")
-            return False  # Return False if the fight is unsuccessful
+            return False
 
     def bribe(self, bribe_item):
         if bribe_item == self.favourite:
@@ -76,11 +76,11 @@ class Enemy(Character):
                 f"[{self.name} takes the item: {bribe_item} - They have accepted your bribe.]"
             )
             print("---------------------------")
-            return True  # Return True if the bribe is successful
+            return True
         else:
             print(f"[{self.name} has no interest in the item: {bribe_item}.]")
             print("---------------------------")
-            return False  # Return False if the bribe is unsuccessful
+            return False
 
 
 class Friend(Character):
